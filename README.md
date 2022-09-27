@@ -9,3 +9,8 @@ Running the project — How could someone else get your code working for them?
 ---
 Dependencies — What are the main outside resources your project needs to run?
 ---
+My specs
+---
+Monitor: 4k (3840 x 2160 px)
+
+Windows 11
