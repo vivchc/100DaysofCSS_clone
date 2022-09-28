@@ -1,8 +1,264 @@
+<!--
+Clone of the 100 Days CSS Challenge landing page. Work in progress.
+Programmer: Viann Cheng
+
+Code is organized by comments:
+HEADING1
+heading2
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
-    100 Days CSS Challenge
+    <title>100 Days CSS Challenge</title>
     <link rel="stylesheet" href="challenge.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="normal-text">
+      <!--NAVBAR-->
+      <ul class="container">
+        <li class="block-container" id="navbar">
+          <a href="#" class="nav" title="The Challenge">The Challenge</a>
+          <!--Left out href to hide link underline-->
+          <a class="nav" title="What is this?"> What is this? </a>
+          <a class="nav" title="How can I join?"> How can I join? </a>
+          <a class="nav" title="Leaderboard"> Leaderboard </a>
+        </li>
+
+        <li class="block-container" id="button">
+          <a href="" class="progress-button" title="Check Your Progress">
+            Check Your Progress
+          </a>
+        </li>
+      </ul>
+
+      <!--BODY-->
+      <ul class="container" id="main">
+        <li class="block-container">
+          <div id="subtitle">100 Days CSS Challenge</div>
+          <div id="header">Day <span class="purple">#58</span></div>
+          <br />
+          <div class="dark-gray">
+            <b>3D Sphere:</b> With a little creativity, you can create these
+            crazy 3D bodies with CSS.
+          </div>
+          <br />
+          <!--TEMPLATE BUTTON-->
+          <div>
+            <img src="double-arrow.png" class="double-arrow" />
+            Grab the
+            <a href="" class="template-button" title="Open template on CodePen">
+              <span id="large-arrow">></span>TEMPLATE
+            </a>
+            and submit your work.
+          </div>
+
+          <!--FORM-->
+          <div>
+            <input
+              type="text"
+              class="normal-text"
+              placeholder="Paste your Pen URL here"
+            />
+            <a href="" class="submit-button" title="Submit">Submit</a>
+          </div>
+
+          <!--TIMER-->
+          <div>
+            <br />
+            <img id="clock" src="clock.png" />
+            <span id="countdown"><p id="countdown"></p></span>
+            <script src="timer.js"></script>
+          </div>
+        </li>
+
+        <!--SONIC ANIMATION-->
+        <li class="block-container" id="sonic-animation">
+          <div>
+            <img id="bkgd" src="sonic-bkgd.png" />
+            <img id="block" src="sonic-block.png" />
+            <img id="ring" src="sonic-ring.png" />
+            <img id="sonic-moving" src="sonic-moving.png" />
+          </div>
+          <div>
+            <span id="arrow-div">
+              <a href="" id="arrow-link">
+                <img
+                  src="arrow.png"
+                  class="arrow"
+                  id="left-arrow"
+                  onmouseover="this.src='arrow-hover.png'"
+                  onmouseout="this.src='arrow.png'"
+                />
+              </a>
+              <span class="dark-gray" id="switch-day">Switch Day</span>
+              <a href="" id="arrow-link">
+                <img
+                  src="arrow.png"
+                  class="arrow"
+                  id="right-arrow"
+                  onmouseover="this.src='arrow-hover.png'"
+                  onmouseout="this.src='arrow.png'"
+                />
+              </a>
+            </span>
+            <span>
+              <a
+                class="box-link"
+                href="https://codepen.io/vivchc/pen/mdLXBPP"
+                title="View this Pen from vivchc on CodePen"
+              >
+                <img
+                  src="box.png"
+                  class="box"
+                  onmouseover="this.src='box-hover.png'"
+                  onmouseout="this.src='box.png'"
+                />
+              </a>
+            </span>
+            <span>
+              <a href="" class="refresh-link">
+                <img
+                  src="refresh.png"
+                  class="refresh"
+                  onmouseover="this.src='refresh-hover.png'"
+                  onmouseout="this.src='refresh.png'"
+                />
+              </a>
+            </span>
+          </div>
+        </li>
+      </ul>
+
+      <!--SUBMITTED PENS-->
+      <ul class="container">
+        <li class="block-container" id="bottom">
+          <div class="dark-gray" id="submitted-pens">Submitted Pens</div>
+          <div>
+            <img src="double-arrow.png" class="double-arrow" id="point-down" />
+          </div>
+        </li>
+
+        <!--EMBED CODEPEN (X2)-->
+        <li class="block-container" id="bottom">
+          <!--1st codepen-->
+          <p
+            class="codepen"
+            data-height="400"
+            data-theme-id="dark"
+            data-default-tab="css,result"
+            data-slug-hash="mdLXBPP"
+            data-user="vivchc"
+            style="
+              height: 400px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span>
+              See the Pen
+              <a href="https://codepen.io/vivchc/pen/mdLXBPP"> Sonic</a> by
+              vivchc (<a href="https://codepen.io/vivchc">@vivchc</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </span>
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+          <!--Codepen caption-->
+          <div class="normal-text" id="bottom-caption">
+            <span class="codepens-caption">
+              Use 0.5x or 0.25x to see animation
+            </span>
+            <span class="codepens-buttons">
+              <a
+                class="box-link"
+                href="https://codepen.io/vivchc/pen/mdLXBPP"
+                title="View this Pen from vivchc on CodePen"
+              >
+                <img
+                  src="box.png"
+                  class="box"
+                  onmouseover="this.src='box-hover.png'"
+                  onmouseout="this.src='box.png'"
+                />
+              </a>
+              <a class="refresh-link">
+                <img
+                  src="refresh.png"
+                  class="refresh"
+                  onmouseover="this.src='refresh-hover.png'"
+                  onmouseout="this.src='refresh.png'"
+                />
+              </a>
+            </span>
+          </div>
+        </li>
+        <li class="block-container" id="bottom">
+          <!--2nd codepen-->
+          <p
+            class="codepen"
+            data-height="400"
+            data-theme-id="dark"
+            data-default-tab="css,result"
+            data-slug-hash="mdLXBPP"
+            data-user="vivchc"
+            style="
+              height: 400px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span>
+              See the Pen
+              <a href="https://codepen.io/vivchc/pen/mdLXBPP"> Sonic</a> by
+              vivchc (<a href="https://codepen.io/vivchc">@vivchc</a>) on
+              <a href="https://codepen.io">CodePen</a>.
+            </span>
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+          <!--Codepen caption-->
+          <div class="normal-text" id="bottom-caption">
+            <span class="codepens-caption"> This the 2nd embed codepen </span>
+            <span class="codepens-buttons">
+              <a
+                class="box-link"
+                href="https://codepen.io/vivchc/pen/mdLXBPP"
+                title="View this Pen from vivchc on CodePen"
+              >
+                <img
+                  src="box.png"
+                  class="box"
+                  onmouseover="this.src='box-hover.png'"
+                  onmouseout="this.src='box.png'"
+                />
+              </a>
+              <a class="refresh-link">
+                <img
+                  src="refresh.png"
+                  class="refresh"
+                  onmouseover="this.src='refresh-hover.png'"
+                  onmouseout="this.src='refresh.png'"
+                />
+              </a>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>

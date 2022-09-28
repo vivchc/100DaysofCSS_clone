@@ -1,1 +1,350 @@
-/* Style for "The Challenge" page */
+/* 
+ * Stylesheet for the 100 Days CSS Challenge landing page 
+ * RGB color source: coolors.co
+ * Programmer: Viann Cheng
+ * 
+ * Code is organized by comments:
+ *  ---HEADING 1---
+ *  HEADING 2
+ *  notes to self
+ */
+
+/*---NAVBAR ITEMS---*/
+/* default for all links */
+a.nav {
+  padding-right: 40px;
+  color: #5e5e5e;
+  text-underline-offset: 0.25em;
+  text-underline-position: under;
+}
+
+/* unvisited link */
+a.nov:link {
+  color: gray;
+  text-decoration: none;
+}
+
+/* visited link */
+a.nav:visited {
+  color: #6c3bdc; /* Blue violet */
+  text-underline-position: under;
+}
+
+/* mouse over link */
+a.nav:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* selected link */
+a.nav:active {
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+.progress-button {
+  background: #6c3bdc url(graph.png) 92% 50% no-repeat; /* Blue violet */
+  background-size: 7%; /* affects the size of the png */
+  border: none;
+  color: white;
+  padding: 12px 15px;
+  padding-right: 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+/*---CONTAINERS---*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  position: relative;
+  padding: 8px;
+  margin-left: 6.5em;
+  margin-right: 6.5em;
+  list-style: none;
+}
+
+.block-container {
+  /* background: pink; */
+  flex-basis: 45%;
+  text-align: left;
+}
+
+#navbar {
+  display: flex;
+  flex-basis: 60%;
+  align-items: center;
+}
+
+#button {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  flex-basis: 30%;
+}
+
+#main {
+  display: flex;
+  margin-top: 75px;
+}
+
+#bottom {
+  justify-content: center;
+  flex-basis: 65%;
+  padding-top: 3.5em;
+  text-align: center;
+}
+
+/*---BODY---*/
+/* TEXT */
+.normal-text {
+  font-size: 1em;
+  font-family: "Consolas", monospace;
+}
+#subtitle {
+  display: flex;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: gray;
+  font-size: 1.05em;
+}
+#header {
+  font-weight: bold;
+  font-size: 3.7em;
+  line-height: 1.2;
+}
+
+.purple {
+  color: #6c3bdc; /* Blue violet */
+}
+.dark-gray {
+  color: #5e5e5e; /* Blue violet */
+  line-height: 1.5;
+}
+
+#large-arrow {
+  font-size: 1.4em;
+  margin-right: 0.25em;
+}
+
+#switch-day {
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+#submitted-pens {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* BUTTON */
+.template-button {
+  background-color: #f2eefc;
+  border: none;
+  color: #6c3bdc; /* Blue violet*/
+  padding: 3px 10px;
+  padding-top: 0px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+.submit-button {
+  background-color: #6c3bdc; /* Blue violet */
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  margin-left: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+/* LINK (INCL. IMG LINKS) */
+#arrow-div {
+  margin: 5px;
+}
+#arrow-link,
+.box-link,
+.refresh-link {
+  text-decoration: none;
+}
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+  width: 4.5%;
+}
+#left-arrow {
+  rotate: 180deg;
+  margin-left: 75px;
+}
+#right-arrow {
+  margin-right: 180px;
+}
+.box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 4.5%;
+}
+.refresh {
+  display: inline-block;
+  vertical-align: middle;
+  width: 4.5%;
+}
+
+/* CODEPEN */
+.codepens-caption {
+  line-height: 3em;
+  float: left;
+  width: 40em;
+  text-align: left;
+  padding-left: 1em;
+}
+.codepens-buttons {
+  line-height: 3em;
+  padding-left: 5em;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+/* IMAGES (NO LINKS) */
+.double-arrow {
+  display: inline-block;
+  vertical-align: middle;
+  width: 4.5%;
+}
+#point-down {
+  margin-bottom: -2em;
+  width: 3.5%;
+  rotate: 90deg;
+}
+
+/* FORM */
+input[type="text"],
+select {
+  width: 68%;
+  padding: 15px 12px;
+  margin: 10px 0;
+  margin-bottom: 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* TIMER */
+#countdown > span {
+  display: inline-block;
+}
+#clock {
+  margin-left: 0.1em;
+  vertical-align: middle;
+  width: 3%;
+}
+#hours {
+  display: inline-block;
+  white-space: nowrap;
+}
+#minutes {
+  display: inline-block;
+}
+#seconds {
+  display: inline-block;
+}
+
+/*---SONIC ANIMATION---*/
+#bkgd {
+  width: 400px;
+  margin-left: 5em;
+  margin-bottom: 0.25em;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px #eee;
+}
+
+#block {
+  width: 80px;
+  z-index: 2;
+  position: relative;
+  right: 270px;
+  bottom: 0.25em;
+  opacity: 1;
+}
+
+#ring {
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  right: 340px;
+  bottom: 250px;
+
+  animation: ring 1s linear infinite alternate;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+#sonic-moving {
+  width: 80px;
+  z-index: 1;
+  position: absolute;
+  right: 325px;
+  bottom: 60px;
+
+  animation: jump 2.5s linear infinite forwards;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+  10% {
+    transform: translateY(-90px) rotate(180deg);
+  }
+  20% {
+    /* transform: translateY(-180px) rotate(180deg); */
+    transform: translateY(-180px) rotate(360deg);
+  }
+  30% {
+    transform: translateY(-90px) rotate(540deg);
+  }
+  39% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(0px) rotate(720deg);
+    opacity: 0;
+  }
+  41% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0;
+  }
+}
