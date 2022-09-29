@@ -12,7 +12,7 @@ Main features are included:
 - Embed CodePen (x2)
 - Form
 - Button
-- Countdown timer using
+- Countdown timer using vanilla JS
 - Animation using vanilla CSS
 
 Upcoming features:
